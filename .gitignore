@@ -11,3 +11,4 @@ __pycache__/
 
 # Data files (Optional: uncomment if you don't want to upload large CSVs)
 # *.csv
+.vscode/
