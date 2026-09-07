@@ -1,20 +1,28 @@
-# Simple RUL prediction
+# Jet Engine RUL Prediction
 
-This project predicts an engine's remaining useful life (RUL) from sensor data.
-It uses a small custom neural network with one hidden layer and plain gradient
-descent—no Adam optimiser—so there are fewer settings to understand.
+This project predicts a jet engine's Remaining Useful Life (RUL) from sensor data. It relies on a custom neural network built from scratch to demonstrate foundational machine learning concepts.
 
-Place these three files in the project directory:
+## Overview
+Instead of relying on advanced optimizers or deep architectures, this project intentionally uses a simplified approach so there are fewer settings to understand:
+* **Architecture:** A small custom neural network with a single hidden layer.
+* **Optimization:** Plain gradient descent (no Adam optimizer).
+* **Environment:** Built and managed using `uv`.
 
-- `PM_train.csv` — training sensor readings
-- `PM_test.csv` — test sensor readings
-- `PM_truth.csv` — one true RUL value for each test engine
+## Dataset
+The repository includes the required dataset files directly:
+* `PM_train.csv`: Training data containing engine sensor readings.
+* `PM_test.csv`: Testing data.
+* `PM_truth.csv`: The ground truth RUL values for the test set.
 
-Put the three data files in the project folder, then run:
+## Getting Started
+
+### Prerequisites
+Make sure you have [uv](https://github.com/astral-sh/uv) installed on your machine.
+
+### Installation
+Clone this repository and sync the dependencies using `uv`:
 
 ```bash
-uv run cs-ai-lab
-```
-
-The script reports RMSE in cycles and R². R² is the accuracy-like score; around
-80% is a reasonable goal, but the exact score depends on the supplied data.
+git clone [https://github.com/MandarShringari/Jet-engine-RUL.git](https://github.com/MandarShringari/Jet-engine-RUL.git)
+cd Jet-engine-RUL
+uv sync
