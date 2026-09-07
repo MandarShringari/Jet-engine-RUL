@@ -1,0 +1,13 @@
+# Virtual environments
+.venv/
+
+# Python cache files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Editor directories and files
+.vscode/
+
+# Data files (Optional: uncomment if you don't want to upload large CSVs)
+# *.csv
